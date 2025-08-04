@@ -4,9 +4,9 @@
 
 def canUnlockAll(boxes):
     """Return true if all boxes have keys."""
-    flag = 0
     length = len(boxes)
     for i in range(1, length):
+        flag = 0
         for j in range(length):
             if i in boxes[j] and i != j:
                 flag = 1
